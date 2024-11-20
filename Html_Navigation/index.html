@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sample Navigation</title>
+</head>
+<style>
+body{
+    margin: 0;
+    padding: 0;
+}
+*{box-sizing: border-box;}
+.myHeader a{
+    text-decoration: none;
+    color: white;
+    padding:25px 80px;
+    display:inline-block;
+}
+.myHeader{
+    background-color:black;
+    text-align: center;
+    line-height: 10px;
+}
+.myHeader :hover{
+    background-color: lightgray;
+
+}
+@media(max-width:750px){
+    .myHeader a{
+        display: block;
+        padding: 15px 10px;
+    }
+}
+</style>
+<body>
+<div class="myHeader">
+    <a href="#Home">Home</a>
+    <a href="#About">About</a>
+    <a href="#Contact">Contact</a>
+    <a href="Others">Others</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar menu</title>
+</head>
+<style>
+    *{box-sizing: border-box;}
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        background-color:#0e0d6b;
+        padding: 30px 20px;
+    }
+    .logo{
+        float: left;
+        color: #ffc501;
+        font-family:fantasy;
+        font-size: 25px;
+    }
+    .navi{
+        list-style:none;
+        float:right;
+        padding: 0;
+        margin: 0;
+    }
+    .navi li{
+        display: inline-block;
+        margin-right: 15px;
+    }
+    .navi a{
+        text-decoration: none;
+        color: white;
+    }
+    .navi a:hover{
+        color:#ffc501;
+    }
+    .Bar{
+        display:none;
+        float: right;
+        cursor: pointer;
+    }
+    .Bar .line{
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin:3px 0;
+    }
+    #menu{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navi {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: #0e0d6b;
+        text-align: center;
+    }
+
+    #menu:checked + .Bar + nav .navi {
+        display: block;
+    }
+    .navi li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .Bar {
+        display: block;
+    }
+}
+
+</style>
+<body>
+<header>
+    <div class="logo">BBSTAR</div>
+    <input type="checkbox" id="menu">
+    <label for="menu" class="Bar">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </label>
+    <nav>
+        <ul class="navi">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+</body>
+</html>
