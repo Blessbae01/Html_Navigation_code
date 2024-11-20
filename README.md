@@ -1,0 +1,1 @@
+This repository contains a responsive HTML navigation bar styled with CSS. It includes a desktop layout and a mobile-friendly hamburger menu triggered by a checkbox. The code demonstrates using CSS media queries, hover effects, and sibling selectors, making it ideal for beginners exploring responsive web design and interactivity.
